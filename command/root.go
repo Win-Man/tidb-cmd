@@ -30,7 +30,7 @@ func init() {
 
 	// rootCmd.PersistentFlags().Int64Var(&timeout, "timeout", 5, "Timeout in seconds to execute")
 	// rootCmd.PersistentFlags().BoolVarP(&isTest, "yes", "y", false, "run test")
-	rootCmd.AddCommand(newTestCmd())
+	rootCmd.AddCommand(newTestCmd(), newAnalyzeCmd(), newDecryptCmd())
 
 	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.cobra.yaml)")
 	// rootCmd.PersistentFlags().StringP("author", "a", "YOUR NAME", "author name for copyright attribution")
